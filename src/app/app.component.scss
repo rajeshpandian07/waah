@@ -31,6 +31,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        .secondary-btn-sm {
+            margin-right: 20px;
+        }
     }
 }
 .w-banner{
@@ -40,10 +43,10 @@
     justify-content: center;
     &-img{}
     &-img-file{
-        width: 100%;
+       max-width: 100%;
+       height: 100%;
     }
     &-content{
-        background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 0;
         bottom: 0;

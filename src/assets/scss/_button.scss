@@ -5,6 +5,7 @@
     text-align: center;
     color: $font-clr;
     display: flex !important;
+    border-radius: 8px !important;
 
     @if($btn-size == "lg"){
         padding: 12px 38px !important;
@@ -27,10 +28,20 @@
 }
 .primary-btn-sm{
     @include button($primary, $white, $primary, "sm");
+    &.mat-stroked-button {
+        min-width: 143px;
+        display: flex;
+        justify-content: center;
+    }
 }
 .secondary-btn-lg{
     @include button(transparent, $primary, $primary, "lg");
 }
 .secondary-btn-sm{
     @include button(transparent, $primary, $primary, "sm");
+    &.mat-stroked-button {
+        min-width: 143px;
+        display: flex;
+        justify-content: center;
+    }
 }
